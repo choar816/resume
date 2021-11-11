@@ -1,0 +1,25 @@
+/* util */
+.sr-only {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* style */
+body {
+    background-color: #eee;
+}
+
+#resume {
+    margin: 50px auto;
+    padding: 50px;
+    width: 700px;
+
+    border: none;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.05);
+}
