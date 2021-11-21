@@ -11,6 +11,7 @@
 /* style */
 body {
     font-family: 'Gowun Dodum';
+    line-height: 1.6em;
     background-color: #eee;
     padding: 50px;
 }
@@ -26,6 +27,16 @@ body {
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.05);
 }
 
+strong {
+    display: inline-block;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    background-color: #666;
+    border-radius: 5px;
+    padding: 2px 7px;
+    margin-right: 5px;
+}
+
 h1 {
     text-align: center;
     font-size: 32px;
@@ -37,6 +48,7 @@ h2 {
     font-size: 20px;
     font-weight: 700;
 }
+
 
 .list-contact {
     position: relative;
@@ -76,10 +88,21 @@ section article {
 
 section article:nth-child(1) {
     float: left;
-    background-color: yellow;
+    background-color: palegoldenrod;
 }
 section article:nth-child(2) {
     float: left;
-    margin-left: 10px;
-    background-color: yellowgreen;
+    width: 540px;
+    margin-left: 20px;
+    background-color: paleturquoise;
+}
+
+section article:nth-child(2) ul {
+    list-style: '- ' inside;
+}
+
+@media screen and (max-width: 900px) {
+    section article:nth-child(2) {
+        width: calc(100% - 20px);
+    }
 }
