@@ -46,7 +46,7 @@ h2 {
 
 .list-contact li {
     float: left;
-    display: block;
+
     padding: 0 16px;
     text-align: center;
     line-height: 30px;
@@ -61,19 +61,13 @@ h2 {
     background-color: none;
 }
 
-/* .list-contact li:nth-child(4) {
-    position: absolute;
-    top: 0;
-    left: -10px;
-} */
-
 .list-contact li:hover {
     background-color: #5d99c6;
     color: white;
 }
 
 section {
-    display: flex;
+    overflow: hidden;
 }
 
 section article {
@@ -81,11 +75,11 @@ section article {
 }
 
 section article:nth-child(1) {
-    flex: 1;
+    float: left;
     background-color: yellow;
 }
 section article:nth-child(2) {
-    flex: 4;
+    float: left;
     margin-left: 10px;
     background-color: yellowgreen;
 }
