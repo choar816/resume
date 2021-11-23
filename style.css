@@ -27,17 +27,22 @@ body {
     box-shadow: 0 0 10px 5px rgba(0,0,0,0.05);
 }
 
-strong {
-    display: inline-block;
-    font-family: 'Source Code Pro', monospace;
-    color: white;
-    background-color: #666;
-    border-radius: 5px;
-    padding: 2px 7px;
-    margin-right: 5px;
+.divider-title {
+    margin: 0 auto;
+    height: 2px;
+    width: 140px;
+    background-color: #333;
 }
 
+.divider-section {
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+}
+
+
 h1 {
+    margin-bottom: 30px;
     text-align: center;
     font-size: 32px;
 }
@@ -51,31 +56,30 @@ h2 {
 
 
 .list-contact {
-    position: relative;
-    margin-top: 15px;
+    margin-bottom: 15px;
     overflow: hidden;
 }
 
 .list-contact li {
+    margin: 0 5px;
+    padding: 5px 0;
     float: left;
-
-    padding: 0 16px;
     text-align: center;
     line-height: 30px;
-    background-color: #90caf9;
-    transition: all 0.5s;
 }
 
 .list-contact li a {
-    display: block;
-    /* padding: 0 16px; */
+    display: inline-block;
+    padding: 0 10px;
+    color: #777;
     text-align: center;
-    background-color: none;
+    transform: scale(1.2);
+    transition: all 0.5s;
 }
 
-.list-contact li:hover {
-    background-color: #5d99c6;
-    color: white;
+.list-contact li a:hover {
+    color: #304ffe;
+    transform: scale(2);
 }
 
 section {
@@ -86,23 +90,50 @@ section article {
     margin-bottom: 10px;
 }
 
+section article a {
+    color: black;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+section article a:hover {
+    color: #304ffe;
+}
+
 section article:nth-child(1) {
     float: left;
-    background-color: palegoldenrod;
+    color: #333;
+    font-weight: 700;
+    /* background-color: palegoldenrod; */
 }
 section article:nth-child(2) {
     float: left;
-    width: 540px;
-    margin-left: 20px;
-    background-color: paleturquoise;
+    width: 450px;
+    margin-left: 100px;
+    /* background-color: paleturquoise; */
 }
 
 section article:nth-child(2) ul {
     list-style: '- ' inside;
 }
 
+footer p {
+    padding-top: 50px;
+    text-align: center;
+}
+
+strong {
+    display: inline-block;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    background-color: #aaa;
+    border-radius: 5px;
+    padding: 0 7px;
+    margin-right: 5px;
+}
+
 @media screen and (max-width: 900px) {
     section article:nth-child(2) {
+        margin-left: 0;
         width: calc(100% - 20px);
     }
 }
