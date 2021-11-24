@@ -18,7 +18,7 @@ body {
 
 #resume {
     margin: 0 auto;
-    padding: 50px;
+    padding: 50px 50px 10px;
 
     max-width: 700px;
     border: none;
@@ -30,8 +30,8 @@ body {
 .divider-title {
     margin: 0 auto;
     height: 2px;
-    width: 140px;
-    background-color: #333;
+    width: 130px;
+    background-color: #444;
 }
 
 .divider-section {
@@ -48,10 +48,19 @@ h1 {
 }
 
 h2 {
-    margin: 24px 0 16px 0;
-
+    margin: 24px 0 32px 0;
     font-size: 20px;
     font-weight: 700;
+}
+
+strong {
+    display: inline-block;
+    font-family: 'Source Code Pro', monospace;
+    color: white;
+    background-color: #aaa;
+    border-radius: 5px;
+    padding: 0 7px;
+    margin-right: 5px;
 }
 
 
@@ -61,19 +70,17 @@ h2 {
 }
 
 .list-contact li {
-    margin: 0 5px;
-    padding: 5px 0;
     float: left;
-    text-align: center;
+    padding: 20px 0;
     line-height: 30px;
 }
 
 .list-contact li a {
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 20px;
     color: #777;
     text-align: center;
-    transform: scale(1.2);
+    transform: scale(1.4);
     transition: all 0.5s;
 }
 
@@ -103,13 +110,12 @@ section article:nth-child(1) {
     float: left;
     color: #333;
     font-weight: 700;
-    /* background-color: palegoldenrod; */
 }
 section article:nth-child(2) {
     float: left;
     width: 450px;
     margin-left: 100px;
-    /* background-color: paleturquoise; */
+    margin-bottom: 40px;
 }
 
 section article:nth-child(2) ul {
@@ -121,16 +127,7 @@ footer p {
     text-align: center;
 }
 
-strong {
-    display: inline-block;
-    font-family: 'Source Code Pro', monospace;
-    color: white;
-    background-color: #aaa;
-    border-radius: 5px;
-    padding: 0 7px;
-    margin-right: 5px;
-}
-
+/* media query */
 @media screen and (max-width: 900px) {
     section article:nth-child(2) {
         margin-left: 0;
