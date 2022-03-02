@@ -10,7 +10,7 @@
 
 /* style */
 body {
-    font-family: 'Gowun Dodum';
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6em;
     background-color: #eee;
     padding: 50px;
@@ -63,7 +63,6 @@ strong {
     margin-right: 5px;
 }
 
-
 .list-contact {
     margin-bottom: 15px;
     overflow: hidden;
@@ -108,12 +107,13 @@ section article a:hover {
 
 section article:nth-child(1) {
     float: left;
+    width: 150px;
     color: #333;
     font-weight: 700;
 }
 section article:nth-child(2) {
     float: left;
-    width: 450px;
+    width: calc(100% - 250px);
     margin-left: 100px;
     margin-bottom: 40px;
 }
